@@ -7,26 +7,27 @@
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Sarala&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="left">
             <div class="logo">
-                <i class="material-icons">cloud</i> 
+                <img class="logo-img" src="klogo.jpg" alt="k logo"> 
                 <p>Dashboard</p>
             </div>
             <ul class="menu menu-1">
-                <li><i class="material-icons">house</i>Home</li>
-                <li><i class="material-icons">person</i>Profile</li>
-                <li><i class="material-icons">message</i>Messages</li>
-                <li><i class="material-icons">schedule</i>History</li>
-                <li><i class="material-icons">task</i>Tasks</li>
-                <li><i class="material-icons">groups</i>Communities</li>
+                <li><i class="material-icons">house</i><a href="#">Home</a></li>
+                <li><i class="material-icons">person</i><a href="#">Profile</a></li>
+                <li><i class="material-icons">message</i><a href="#">Messages</a></li>
+                <li><i class="material-icons">schedule</i><a href="#">History</a></li>
+                <li><i class="material-icons">task</i><a href="#">Tasks</a></li>
+                <li><i class="material-icons">groups</i><a href="#">Communities</li>
             </ul>
             <ul class="menu menu-2">
-                <li><i class="material-icons">settings</i>Settings</li>
-                <li><i class="material-icons">help</i>Support</li>
-                <li><i class="material-icons">shield</i>Privacy</li>
+                <li><i class="material-icons">settings</i><a href="#">Settings</a></li>
+                <li><i class="material-icons">help</i><a href="#">Support</a></li>
+                <li><i class="material-icons">shield</i><a href="#">Privacy</a></li>
             </ul>
         </div>
         <div class="right">
@@ -34,7 +35,7 @@
                 <div class="top-nav">
                     <i class="material-icons">search</i>
                     <input type="text" placeholder="Search">
-                    <i class="material-icons">notifications</i>
+                    <i class="material-icons"><a href="#"> notifications</a></i>
                     <img class="sm-avatar" src="avatar.svg" alt="Avatar of attractive young man">
                     <span>Steve Johnstone</span>
                 </div>
@@ -82,33 +83,51 @@
                     </div>
                 </div>
                 <div class="announcements-wrapper">
-                    <div class="announcement">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam officia vitae in cum vero quo ipsam aut animi, voluptas perspiciatis!</p>
-                    </div>
-                    <div class="announcement">
-                        <p class="announcement">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dignissimos facilis in vel magni consectetur, placeat aliquid aperiam assumenda esse fugit reprehenderit.</p>
-                    </div>
-                    <div class="announcement">
-                        <p class="announcement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rerum optio porro, possimus in nostrum, reprehenderit quibusdam nihil labore eum, ut cupiditate. Cumque, accusamus.</p>
+                    <h2>Announcements</h2>
+                    <div class="announcements-content">
+                        <div class="announcement">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam officia vitae in cum vero quo ipsam aut animi, voluptas perspiciatis!</p>
+                        </div>
+                            <hr>
+                        <div class="announcement">
+                            <p class="announcement">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore dignissimos facilis in vel magni consectetur, placeat aliquid aperiam assumenda esse fugit reprehenderit.</p>
+                        </div>
+                        <hr>
+                        <div class="announcement">
+                            <p class="announcement">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum rerum optio porro, possimus in nostrum, reprehenderit quibusdam nihil labore eum, ut cupiditate. Cumque, accusamus.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="trending">
                     <h2>Trending</h2>
                     <div class="trends">
-                        <div class="trend-1">
-                            <img src="" alt="">
-                            <p>@Someone</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nam dicta</p>
+                        <div class="trend trend-1">
+                            <img src="avatar1.svg" alt="">
+                            <div class="trend-text">
+                                <p><strong>@Someone</strong></p>
+                                <p>Way to go!</p>
+                            </div>
                         </div>
-                        <div class="trend-2">
-                            <img src="" alt="">
-                            <p>@DudeBro</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <div class="trend trend-2">
+                            <img src="avatar2.svg" alt="">
+                            <div class="trend-text">
+                                <p><strong>@DudeBro</strong></p>
+                                <p>Neato project, dude!</p>
+                            </div>
                         </div>
-                        <div class="trend-3">
-                            <img src="" alt="">
-                            <p>@BillStein</p>
-                            <p>AA is a POS</p>
+                        <div class="trend trend-3">
+                            <img src="avatar3.svg" alt="">
+                            <div class="trend-text">
+                                <p><strong>@BillStein</strong><p>
+                                <p>AA is a POS</p>
+                            </div>    
+                        </div>
+                        <div class="trend trend-3">
+                            <img src="avatar5.png" alt="">
+                            <div class="trend-text">
+                                <p><strong>@BillStein</strong></p>
+                                <p>AA is a POS</p>
+                            </div>    
                         </div>
                     </div>
                 </div>

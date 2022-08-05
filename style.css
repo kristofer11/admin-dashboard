@@ -1,10 +1,13 @@
 body {
     height: 100vh;
+    background-color: lightgray;
+    font-family: 'Sarala', sans-serif;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr;
+    height: 100%;
 }
 
 .logo {
@@ -13,7 +16,12 @@ body {
     align-items: center;
     font-size: 2rem;
     margin-left: 2rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.logo-img {
+    height: 5rem;
+    border-radius: 1rem;
+    border: .5rem solid #E1CD1E;
 }
 
 .menu {
@@ -22,7 +30,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .menu li {
@@ -30,24 +37,44 @@ body {
     gap: 2rem;
 }
 
+.menu i {
+    font-size: 2.5rem;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:active {
+    color: red;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
 .left {
     display: grid;
     align-content: start;
     grid-template-rows: auto auto auto;
-    background-color: rgb(45, 150, 248);
+    background-color: #1E32E1;
+    /* background-color: rgb(45, 150, 248); */
     color: white;
 }
 
 
 .right {
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: max(250px) 4fr;
 }
 
 .nav {
-    background-color: wheat;
+    background-color: white;
     display: grid;
     grid-template-rows: 1fr 2fr;
+    box-shadow: 0 8px 6px -6px black;
+    margin-bottom: 1rem;
 }
 
 .top-nav {
@@ -88,7 +115,19 @@ body {
 .buttons button {
     height: 3rem;
     border-radius: 2rem;
+    transition: all .2s ease-in-out; 
+    color: white;
+    background-color: #1E32E1;
+    /* background-color: rgb(36, 164, 207);     */
+}
 
+.buttons button:hover {
+    transform: scale(1.2);
+}
+
+.buttons button:active {
+    background-color: whitesmoke;
+    color: black;
 }
 
 .right-main {
@@ -100,16 +139,19 @@ body {
     "projects trending";
     padding: 1.5rem;
     background-color: lightgray;
+    gap: 1.5rem;
 }
 
 .projects-wrapper {
     grid-area: projects;
     display: grid;
     grid-template-rows: 45px 1fr;
+    gap: 10px;
 }
 
-.projects-wrapper h2 {
+h2 {
     align-self: center;
+    font-size: 2rem;
 }
 
 .project-content {
@@ -123,9 +165,17 @@ body {
     height: auto;
     background-color: white;
     color: black;
-    border: 2px solid blue;
     border-radius: 4%;
+    padding: 1rem;
+    border-left: .5rem solid #E1CD1E;
+    box-shadow: -8px 8px 10px -8px black;
+    transition: all .2s ease-in-out; 
 }
+
+.project:hover {
+    transform: scale(1.1);
+}
+
 
 .project h3 {
     font-size: 1.5rem;
@@ -137,10 +187,41 @@ body {
 
 .announcements-wrapper {
     grid-area:  announcements;
+    display: grid;
+    grid-template-rows: 45px 1fr;
+    gap: 10px;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.announcements-content {
+    background-color: white;
+    border-radius: 4%; 
+    padding: 1rem;
 }
 
 .trending {
     grid-area: trending;
+    display: grid;
+    grid-template-rows: 45px 1fr;
+    gap: 10px;
+}
+
+.trend img {
+    height: 3rem;
+}
+
+.trends {
+    background-color: white;
+    border-radius: 4%;
+    padding: 1rem;
+    box-shadow: 0 8px 6px -6px black;
+    padding: 1rem;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
 }
 
 .sm-avatar {
@@ -150,11 +231,9 @@ body {
 
 .lg-avatar {
     border-radius: 50%;
-    height: 8vh;
+    height: 6rem
 }
 
-button {
-    color: white;
-    background-color: rgb(36, 164, 207);
+a {
+    text-decoration: none;
 }
-
