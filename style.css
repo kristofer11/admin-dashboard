@@ -6,30 +6,30 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: minmax(33px, 1fr) 3fr;
     height: 100%;
 }
 
 .logo {
     display: flex;
-    gap: 1rem;
+    gap: 22px;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-left: 2rem;
 }
 
 .logo-img {
-    height: 5rem;
-    border-radius: 1rem;
-    border: .5rem solid #E1CD1E;
+    height: 2rem;
+    border-radius: 4px;
+    border: .2px solid #E1CD1E;
 }
 
 .menu {
     list-style: none;
-    font-size: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    font-size: 1.5;
+    display: grid;
+    gap: 1rem;
+    width: min(200px);
 }
 
 .menu li {
@@ -38,7 +38,7 @@ body {
 }
 
 .menu i {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .menu a {
@@ -66,13 +66,13 @@ body {
 
 .right {
     display: grid;
-    grid-template-rows: max(250px) 4fr;
+    grid-template-rows: auto 4fr;
 }
 
 .nav {
     background-color: white;
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 30% 70%;
     box-shadow: 0 8px 6px -6px black;
     margin-bottom: 1rem;
 }
@@ -86,15 +86,16 @@ body {
 
 .top-nav *{
     align-self: center;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .top-nav i {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
+
 .top-nav input {
-    height: 2rem;
+    height: 1.5rem;
     border-radius: 2rem;
 }
 
@@ -102,7 +103,7 @@ body {
     display: grid;
     grid-template-columns:   1fr 2fr 2fr;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 .buttons {
@@ -113,7 +114,7 @@ body {
 }
 
 .buttons button {
-    height: 3rem;
+    height: 2rem;
     border-radius: 2rem;
     transition: all .2s ease-in-out; 
     color: white;
@@ -137,35 +138,36 @@ body {
     grid-template-areas: 
     "projects announcements"
     "projects trending";
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: lightgray;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .projects-wrapper {
     grid-area: projects;
     display: grid;
-    grid-template-rows: 45px 1fr;
+    grid-template-rows: 15px 1fr;
     gap: 10px;
 }
 
 h2 {
     align-self: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .project-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: repeat(6, minmax(auto, 175px)); */
     gap: 20px;
+    align-content: start;
 }
 
 .project {
-    height: auto;
+    /* height: auto; */
     background-color: white;
     color: black;
-    border-radius: 4%;
+    border-radius: 8px;
     padding: 1rem;
     border-left: .5rem solid #E1CD1E;
     box-shadow: -8px 8px 10px -8px black;
@@ -173,41 +175,45 @@ h2 {
 }
 
 .project:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 
 .project h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .project p {
-    font-size: 1.25rem;
+    font-size: 13px;
 }
 
 .announcements-wrapper {
     grid-area:  announcements;
     display: grid;
-    grid-template-rows: 45px 1fr;
+    grid-template-rows: 15px 1fr;
     gap: 10px;
     box-shadow: 0 8px 6px -6px black;
 }
 
 .announcements-content {
     background-color: white;
-    border-radius: 4%; 
+    border-radius: 8px; 
     padding: 1rem;
+}
+
+.announcement {
+    font-size: 14px;
 }
 
 .trending {
     grid-area: trending;
     display: grid;
-    grid-template-rows: 45px 1fr;
+    grid-template-rows: 33px 1fr;
     gap: 10px;
 }
 
 .trend img {
-    height: 3rem;
+    height: 33px;
 }
 
 .trends {
@@ -216,12 +222,16 @@ h2 {
     padding: 1rem;
     box-shadow: 0 8px 6px -6px black;
     padding: 1rem;
+    display: grid;
+    align-content: start;
+    gap: 22px;
 }
 
 .trend {
     display: grid;
     grid-template-columns: 1fr 2fr;
-
+    font-size: 14px;
+    align-items: center;
 }
 
 .sm-avatar {
@@ -231,9 +241,13 @@ h2 {
 
 .lg-avatar {
     border-radius: 50%;
-    height: 6rem
+    height: 5rem
 }
 
 a {
     text-decoration: none;
+}
+
+.trend p {
+    line-height: .8;
 }
