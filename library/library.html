@@ -68,7 +68,7 @@
     </div>
 
     <script>
-        const books = [
+        let myLibrary = [
             {
                 "title": "The Lord of the Rings",
                 "author": "Tolkien",
@@ -77,7 +77,22 @@
             }
         ];
 
-        books.forEach(element => console.log(element))
+        function Book(title, author, pages, read) {
+            this.title = title
+            this.author = author
+            this.pages = pages
+            this.read = read
+        };
+
+        function addBook(book) {
+            myLibrary.push(book)
+        }
+
+        const theHobbit = new Book("The Hobbit", "Tolkien", 899, true);
+
+        addBook(theHobbit);
+
+        console.log(myLibrary);
 
     </script>
 </body>
