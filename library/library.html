@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Sarala&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="logo">
+                <img class="logo-img" src="../klogo.jpg" alt="k logo"> 
+                <p>Dashboard</p>
+            </div>
+            <ul class="menu menu-1">
+                <li><i class="material-icons">house</i><a href="../index.html">Home</a></li>
+                <li><i class="material-icons">person</i><a href="library.html">Library</a></li>
+                <li><i class="material-icons">message</i><a href="#">Messages</a></li>
+                <li><i class="material-icons">schedule</i><a href="#">History</a></li>
+                <li><i class="material-icons">task</i><a href="#">Tasks</a></li>
+                <li><i class="material-icons">groups</i><a href="#">Communities</li>
+            </ul>
+            <ul class="menu menu-2">
+                <li><i class="material-icons">settings</i><a href="#">Settings</a></li>
+                <li><i class="material-icons">help</i><a href="#">Support</a></li>
+                <li><i class="material-icons">shield</i><a href="#">Privacy</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="nav">
+                <div class="top-nav">
+                    <i class="material-icons">search</i>
+                    <input type="text" placeholder="Search">
+                    <i class="material-icons"><a href="#"> notifications</a></i>
+                    <img class="sm-avatar" src="../avatar.svg" alt="Avatar of attractive young man">
+                    <span>Steve Johnstone</span>
+                </div>
+                <div class="main-nav">
+                    <img class="lg-avatar" src="../avatar.svg" alt="">
+                    <div class="greeting">
+                        <p>Hi there,</p>
+                        <p><strong>Steve Johnstone (@StevieJ)</strong></p>
+                    </div>
+                    <div class="buttons">
+                        <button class="new">New</button>
+                        <button class="upload">Upload</button>
+                        <button class="share">Share</button>
+                    </div>
+                </div>
+            </div>
+            <div class="right-main">
+                <div class="projects-wrapper">
+                    <h2>Your Projects</h2>
+                    <div class="project-content">
+                        <div class="project">
+                            <h3>Super Cool Project</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, nihil! Placeat ex amet autem debitis!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const books = [
+            {
+                "title": "The Lord of the Rings",
+                "author": "Tolkien",
+                "pages": 900,
+                "read": true,
+            }
+        ];
+
+        books.forEach(element => console.log(element))
+
+    </script>
+</body>
+</html>
