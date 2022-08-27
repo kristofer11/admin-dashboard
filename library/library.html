@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css2?family=Sarala&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
@@ -53,9 +54,29 @@
                 </div>
             </div>
             <div class="right-main">
-                <div class="projects-wrapper">
-                    <h2>Your Projects</h2>
-                    <div class="project-content">
+                <div class="library-wrapper">
+                    <div class="book-input-div">
+                        <form action="" class="book-input">
+                            <div class="title">
+                                <label for="title"> Title
+                                    <input id="title" type="text">
+                                </label>
+                            </div>
+                            <div class="author">
+                                <label for="author"> Author
+                                    <input id="author" type="text">
+                                </label>         
+                            </div>       
+                            <div class="read">        
+                                <label for="read"> Check if read
+                                    <input id="read" type="checkbox"> 
+                                </label>
+                            </div>
+                            <input class="submit" type="submit">
+                        </form>
+                    </div>
+                    <h2>My Library</h2>
+                    <div class="library-content">
                         <div class="project">
                             <h3>Super Cool Project</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, nihil! Placeat ex amet autem debitis!</p>
@@ -77,6 +98,8 @@
             }
         ];
 
+        const libraryDisplay = document.querySelector(".library-content");
+
         function Book(title, author, pages, read) {
             this.title = title
             this.author = author
@@ -88,11 +111,21 @@
             myLibrary.push(book)
         }
 
+        function buildLibrary() {
+            myLibrary.forEach(
+                libraryDisplay.appendChild(div)
+            ) 
+        }
+
+        buildLibrary();
+
         const theHobbit = new Book("The Hobbit", "Tolkien", 899, true);
+
+
 
         addBook(theHobbit);
 
-        console.log(myLibrary);
+        console.log(libraryDisplay);
 
     </script>
 </body>

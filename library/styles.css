@@ -1,0 +1,27 @@
+/* Styles for Library page */
+
+/* .library-wrapper {
+    grid-area: projects;
+    display: grid;
+    grid-template-rows: 15px 15px 1fr;
+    gap: 10px;
+} */
+
+.book-input {
+    display: flex;
+    grid-template-columns: 1fr, 1fr, 1fr, 100px;
+    gap: 1rem;
+}
+
+.submit {
+    height: 2.5rem;
+    width: 133px;
+}
+
+.library-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-rows: repeat(6, minmax(auto, 175px)); */
+    gap: 20px;
+    align-content: start;
+}

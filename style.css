@@ -1,3 +1,5 @@
+/* Initial style sheeet */
+
 body {
     height: 100vh;
     background-color: lightgray;
@@ -92,7 +94,6 @@ body {
 .top-nav i {
     font-size: 1.5rem;
 }
-
 
 .top-nav input {
     height: 1.5rem;
